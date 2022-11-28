@@ -7,6 +7,7 @@ private static Scanner scanner = new Scanner(System.in);
 public static String menu(){
   String choise;
 
+  System.out.print(ColorInterface.GREEN_BOLD_BRIGHT);
   System.out.println("|**********************************|");
   System.out.println("|Виберіть один із варіантів!!!     |");
   System.out.println("|**********************************|");
@@ -32,6 +33,7 @@ public static String menu(){
       }
       break;
     case "3":
+      System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
       System.out.println("|**********************************|");
       System.out.println("|Ви обрали варіант під номером 3   |");
       System.out.println("|**********************************|");
@@ -48,14 +50,17 @@ private static void authorization(){
   String passwordInput;
   String filepath = "";
 
+  System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
   System.out.println("|************************|");
   System.out.println("|Сторінка авторизації    |");
   System.out.println("|************************|");
 
+  System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
   System.out.println("|************************|");
   System.out.println("|Введіть ім'я користувача|");
   System.out.println("|************************|");
 
+  System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
   System.out.println("|************************|");
   System.out.println("|Введіть пароль          |");
   System.out.println("|************************|");
@@ -64,12 +69,14 @@ private static void authorization(){
   boolean loginSucces = VerifyUserLogin.verifiUserLogin(usernameInput, passwordInput, filepath, definiter",");
 
   if (loginSucces = true){
+    System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
     System.out.println("|************************|");
     System.out.println("|Авторизація успішна!!!  |");
     System.out.println("|************************|");
     menu();
   }
   else {
+    System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
     System.out.println("|************************|");
     System.out.println("|Помилка авторизації!!!  |");
     System.out.println("|************************|");
@@ -82,14 +89,17 @@ private static void registration() throws IOException{
   String passwordInput;
   String filepath = "";
 
+  System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
   System.out.println("|************************|");
   System.out.println("|Сторінка реєстрації    |");
   System.out.println("|************************|");
 
+  System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
   System.out.println("|************************|");
   System.out.println("|Введіть ім'я користувача|");
   System.out.println("|************************|");
 
+  System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
   System.out.println("|************************|");
   System.out.println("|Введіть пароль          |");
   System.out.println("|************************|");
@@ -98,12 +108,14 @@ private static void registration() throws IOException{
   boolean registrationSucces = Registration.registration(usernameInput, passwordInput, filepath, definiter",");
 
   if (registrationSucces = true){
+    System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
     System.out.println("|************************|");
     System.out.println("|Реєстрація успішна!!!  |");
     System.out.println("|************************|");
     menu();
   }
   else {
+    System.out.print(ColorInterface.YELLOW_BOLD_BRIGHT);
     System.out.println("|************************|");
     System.out.println("|Помилка реєстрації!!!  |");
     System.out.println("|************************|");

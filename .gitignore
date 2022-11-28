@@ -6,8 +6,8 @@
 *.jar
 *.war
 *.ear
-.nar
-hs_err_pid
+*.nar
+hs_err_pid*
 
 ##############################
 ## IntelliJ
